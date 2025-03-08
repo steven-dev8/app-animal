@@ -4,7 +4,6 @@ from random import randint
 
 
 storage_db = {}
-
 app = FastAPI()
 
 
