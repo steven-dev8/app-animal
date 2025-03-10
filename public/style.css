@@ -2,6 +2,20 @@ form {
     display: flex;
     flex-direction: column;
     width: 360px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 200px;
+}
+
+h1 {
+    text-align: center;
 }
 
 .texto{
@@ -11,6 +25,8 @@ form {
 .campo{
     display: flex;
     align-items: center;
+    padding: 5px;
+    margin-left: 15px;
 }
 
 .campo p {
@@ -18,7 +34,51 @@ form {
     margin-right: 10px;
 }
 
-.submite {
+.enviar {
+    align-self: center;
+}
+
+.titulo_add {
+    text-align: center;
+    padding: 10px;
+    }
+
+.listar_aniamis {
+    width: 360px;
+    background-color: blue;
+}
+
+.listar_aniamis p {
+    text-align: center;
+}
+
+.excluir_animais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 360px;
+    height: 190px;
+    background-color: aqua;
+}
+
+.titulo_del {
+    text-align: center;
+    padding: 10px;
+}
+
+.excluir_animais div{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.excluir_animais div input{
+    width: 70px;
+}
+
+.excluir {
+    width: 100px;
+    align-self: center;
+    margin-top: 13px;
 }
