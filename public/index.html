@@ -6,35 +6,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <h1>App Animal - aplicativo para cadastro de animais</h1>
-    <form action="">
-        <div class="campo">
-            <p>Nome: </p>
-            <input class="texto" type="text">
-        </div>
-        <div class="campo">
-            <p>Idade: </p>
-            <input class="texto" type="text">
-        </div>
-        <div class="campo">
-            <p>Gênero: </p>
-            <input class="texto" type="text">
-        </div>
-        <div class="campo">
-            <p>Cor: </p>
-            <input class="texto" type="text">
-        </div>
-        <div class="submite">
-            <input type="submit">
-        </div>
-    </form>
-    <div>
-        <p>Animais disponíveis</p>
-        <ul id="lista-animais">
-        </ul>
-    </div>
+    <h1>App Animal</h1>
+    <main>
+        <form id="formes-animal">
+            <label class="titulo_add">Adicionar animal</label>
+            <div class="campo">
+                <p>Nome: </p>
+                <input class="texto" type="text" id="nome">
+            </div>
+            <div class="campo">
+                <p>Idade: </p>
+                <input class="texto" type="text" id="idade">
+            </div>
+            <div class="campo">
+                <p>Gênero: </p>
+                <select name="" id="">
+                    <option value="macho">Macho</option>
+                    <option value="femea">Fêmea</option>
+                </select>
+            </div>
+            <div class="campo">
+                <p>Cor: </p>
+                <input class="texto" type="text" id="cor">
+            </div>
+            <div class="enviar">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+        
+    </main>
 </body>
 </html>
