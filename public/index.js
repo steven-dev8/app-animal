@@ -39,7 +39,7 @@ document.getElementById('btn_consulta').addEventListener('click', async () => {
     const id = document.getElementById('id_consulta').value;
     const dados = await axios.get(`http://127.0.0.1:8000/animals/${id}`)
     const info = dados.data
-    if (dados) {
+    if (info.name) {
         const nome = document.getElementById('nome_consulta');
         const idade = document.getElementById('idade_consulta');
         const sexo = document.getElementById('sexo_consulta');
