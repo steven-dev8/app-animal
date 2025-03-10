@@ -11,7 +11,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 200px;
+    gap: 100px;
 }
 
 h1 {
@@ -83,4 +83,45 @@ h1 {
     width: 100px;
     align-self: center;
     margin-top: 13px;
+}
+
+.consultar_animal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    border-radius: 20px;
+    background-color: #00ffff;
+}
+
+.consultar_animal label {
+    text-align: center;
+    padding: 10px;
+}
+
+.consultar_animal div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.consultar_animal button {
+    align-self: center;
+    width: 100px;
+    margin-top: 13px;
+}
+
+.consultar_animal div input {
+    width: 70px;
+}
+
+.tabela_consulta {
+    align-self: flex-start;
+    padding: 25px;
+    margin-left: 10px;
+}
+
+td {
+    padding: 5px;
 }

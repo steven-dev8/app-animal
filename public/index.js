@@ -35,10 +35,21 @@ document.getElementById('btn_excluir').addEventListener('click', async (event) =
     listar_animais()
 })
 
+document.getElementById('btn_consulta').addEventListener('click', async () => {
+    const id = document.getElementById('id_consulta').value;
+    const dados = await axios.get(`http://127.0.0.1:8000/animals/${id}`)
+    const info = dados.data
+    if (dados) {
+        const nome = document.getElementById('nome_consulta');
+        const idade = document.getElementById('idade_consulta');
+        const sexo = document.getElementById('sexo_consulta');
+        const cor = document.getElementById('cor_consulta');
 
-function main() {
-    listar_animais();
-    excluir_animal();
-}
+        nome.innerText = info.name;
+        idade.innerText = info.age;
+        sexo.innerText = info.genre;
+        cor.innerText = info.color;
+    }
+})
 
-main()
+listar_animais();
