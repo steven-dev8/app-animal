@@ -11,7 +11,7 @@
 <body>
     <h1>App Animal</h1>
     <main>
-        <form id="formes-animal">
+        <div id="adicionar-animal" class="add_animal">
             <label class="titulo_add">Adicionar animal</label>
             <div class="campo">
                 <p>Nome: </p>
@@ -23,7 +23,7 @@
             </div>
             <div class="campo">
                 <p>Gênero: </p>
-                <select name="" id="">
+                <select name="" id="genero">
                     <option value="macho">Macho</option>
                     <option value="femea">Fêmea</option>
                 </select>
@@ -33,17 +33,18 @@
                 <input class="texto" type="text" id="cor">
             </div>
             <div class="enviar">
-                <input type="submit" value="Cadastrar">
+                <button id="btn_enviar">Adicionar</button>
             </div>
-        </form>
-        <form action="" class="excluir_animais">
+
+        </div>
+        <div class="excluir_animais" id="excluir_animals">
             <label class="titulo_del">Excluir animal</label>
             <div>
                 <p>ID do animal:</p>
-                <input type="text">
+                <input type="text" id="id_animal">
             </div>
-            <input class="excluir" type="submit" value="Excluir">
-        </form>
+            <button class="excluir" id="btn_excluir">Excluir</button>
+        </div>
         <div class="listar_aniamis">
             <p>Animais cadastrados</p>
             <ul id="lista-animais">
