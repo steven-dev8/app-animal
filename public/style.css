@@ -1,10 +1,10 @@
-form {
+.add_animal {
     display: flex;
     flex-direction: column;
     width: 360px;
     height: 350px;
     border-radius: 20px;
-    background-color: aqua;
+    background-color: #00ffff;
 }
 
 main {
@@ -44,8 +44,9 @@ h1 {
     }
 
 .listar_aniamis {
+    border-radius: 20px;
     width: 360px;
-    background-color: blue;
+    background-color: #00ffff;
 }
 
 .listar_aniamis p {
@@ -58,6 +59,7 @@ h1 {
     gap: 10px;
     width: 360px;
     height: 190px;
+    border-radius: 20px;
     background-color: aqua;
 }
 
