@@ -42,7 +42,8 @@ pip install -r requirements.txt
 ### 4️⃣ Iniciar o servidor FastAPI
 
 ```bash
-uvicorn src.server:app --reload
+cd src/
+uvicorn server:app --reload
 ```
 
 ### 5️⃣ Abrir o frontend
