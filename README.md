@@ -21,7 +21,7 @@ A aplicação permite cadastrar, excluir, listar e pesquisar animais.
 ### 1️⃣ Clonar o repositório  
 
 ```bash
-git clone https://github.com/seu-usuario/app-animal.git
+git clone https://github.com/steven-dev8/app-animal.git
 cd app-animal
 ```
 ### 2️⃣ Criar e ativar o ambiente virtual
