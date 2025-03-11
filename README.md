@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 ```bash
 cd src/
-uvicorn server:app --reload
+uvicorn server:app --host 127.0.0.1 --port 8000
 ```
 
 ### 5️⃣ Abrir o frontend
